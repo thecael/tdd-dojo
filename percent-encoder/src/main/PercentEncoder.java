@@ -11,6 +11,11 @@ public class PercentEncoder
 	{
 		input = input.replaceAll("%", "%25");
 		input = input.replaceAll(" ", "%20");
+		input = input.replaceAll("@", "%40");
+		input = input.replaceAll(";", "%3B");
+		input = input.replaceAll(":", "%3A");
+		input = input.replaceAll("/", "%2F");
+		input = input.replaceAll("=", "%3D");
 		input = input.replaceAll("\\\\", "%5C");
 		input = input.replaceAll("\\.", "%2E");
 		input = input.replaceAll("\\[", "%5B");
